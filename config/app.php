@@ -164,6 +164,7 @@ return [
         Appstract\BladeDirectives\BladeDirectivesServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
         HieuLe\Active\ActiveServiceProvider::class,
+        Sofa\Eloquence\BaseServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -28,7 +28,7 @@ return [
         'general' => [
             'all_rights_reserved' => 'Todos os direitos reservados.',
             'are_you_sure'        => 'Tem certeza?',
-            'boilerplate_link'    => 'Laravel 5 Boilerplate',
+            'xlabtechs_link'    => 'X-Lab Technologies',
             'continue'            => 'Continuar',
             'member_since'        => 'Membro desde',
             'minutes'             => ' minutos',

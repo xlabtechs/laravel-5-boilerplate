@@ -30,7 +30,7 @@ return [
         'general' => [
             'all_rights_reserved' => 'Alla rättigheter förbehålls.',
             'are_you_sure'        => 'Är du säker?',
-            'boilerplate_link'    => 'Laravel 5 Boilerplate',
+            'xlabtechs_link'    => 'X-Lab Technologies',
             'continue'            => 'Fortsätt',
             'member_since'        => 'Registrerad',
             'minutes'             => ' minutes',

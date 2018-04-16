@@ -36,7 +36,7 @@ return [
         'general'   => [
             'all_rights_reserved' => 'Все права защищены.',
             'are_you_sure'        => 'Вы уверены?',
-            'boilerplate_link'    => 'Laravel 5 Boilerplate',
+            'xlabtechs_link'    => 'X-Lab Technologies',
             'continue'            => 'Продолжить',
             'member_since'        => 'Пользователь с',
             'minutes'             => 'минут',

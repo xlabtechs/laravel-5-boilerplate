@@ -30,7 +30,7 @@ return [
         'general' => [
             'all_rights_reserved' => '保留所有權利。 ',
             'are_you_sure' => '你確定嗎？ ',
-            'boilerplate_link' => 'Laravel 5 Boilerplate',
+            'xlabtechs_link' => 'X-Lab Technologies',
             'continue' => '繼續',
             'member_since' => '會員自',
             'minutes' => ' 分鐘',
