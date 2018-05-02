@@ -47,7 +47,17 @@ return [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
             'system'    => 'System',
+            'articles'    => 'Articles',
         ],
+
+        'articles' => [
+            'view'        => 'View Article',
+            'all'        => 'All Articles',
+            'create'     => 'Create Article',
+            'edit'       => 'Edit Article',
+            'management' => 'Article Management',
+            'main'       => 'Articles',
+        ]
     ],
 
     'language-picker' => [

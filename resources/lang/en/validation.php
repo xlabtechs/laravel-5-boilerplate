@@ -120,7 +120,7 @@ return [
     'attributes' => [
 
         'backend' => [
-            'access' => [
+            'access'   => [
                 'permissions' => [
                     'associated_roles' => 'Associated Roles',
                     'dependencies'     => 'Dependencies',
@@ -160,6 +160,13 @@ return [
                     'language'                => 'Language',
                 ],
             ],
+
+            'articles' => [
+                'title'         => 'Title',
+                'body'          => 'Body',
+                'description'   => 'Description',
+            ],
+
         ],
 
         'frontend' => [

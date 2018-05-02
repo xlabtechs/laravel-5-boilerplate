@@ -40,5 +40,10 @@ return [
         'contact' => [
             'sent' => 'Your information was successfully sent. We will respond back to the e-mail provided as soon as we can.',
         ],
+        'article' => [
+            'saved' => 'Article saved successfully.',
+            'updated' => 'Article saved successfully.',
+            'deleted' => 'Article saved successfully.'
+        ],
     ],
 ];

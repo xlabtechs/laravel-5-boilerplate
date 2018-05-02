@@ -105,6 +105,31 @@ return [
                 'view' => 'View User',
             ],
         ],
+
+        'articles' => [
+            'management' => 'Articles Management',
+            'create'     => 'Create Article',
+            'view' => 'View Article',
+            'edit'       => 'Edit Article',
+
+            'table' => [
+                'title'         => 'Title',
+                'body'          => 'Body',
+                'description'   => 'Description',
+                'sort'          => 'Sort',
+                'total'         => 'article total|articles total',
+            ],
+
+            'content' => [
+                'created_at'    => 'Created At',
+                'deleted_at'    => 'Deleted At',
+                'last_updated'  => 'Last Update',
+                'title'         => 'Title',
+                'body'          => 'Body',
+                'description'   => 'Description',
+
+            ]
+        ]
     ],
 
     'frontend' => [
