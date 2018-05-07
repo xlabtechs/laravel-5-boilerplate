@@ -21,7 +21,8 @@
         "spatie/laravel-permission": "^2.5",
         "spatie/laravel-sluggable": "^2.1",
         "webpatser/laravel-uuid": "^3.0",
-        "xlab/l5-repository": "dev-master"
+        "xlab/l5-repository": "dev-master",
+        "xlabtechs/laravel-generator": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.0",
@@ -93,6 +94,13 @@
         {
             "url": "https://github.com/xlabtechs/l5-repository.git",
             "type": "git"
+        },
+        {
+            "type": "path",
+            "url": "packages/xlabtechs/laravel-generator",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "config": {
