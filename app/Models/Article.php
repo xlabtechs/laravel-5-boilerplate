@@ -44,22 +44,13 @@ class Article extends Model
     ];
 
     /**
-     * The relations to eager load on every query.
+     * Get the key name for route model binding.
      *
-     * @var array
+     * @return string
      */
-    protected $with = [
-        'tags'
-    ];
-
-    /**
-     * Get the list of tags attached to the article.
-     *
-     * @return array
-     */
-    public function getTagListAttribute()
+    public function getRouteKeyName()
     {
-        return $this->tags->pluck('name')->toArray();
+        return 'id';
     }
 
     /**
@@ -82,13 +73,15 @@ class Article extends Model
         return $this->belongsToMany(Tag::class);
     }
 
+
     /**
-     * Get the key name for route model binding.
+     * Get the user that owns the article.
      *
-     * @return string
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function getRouteKeyName()
+    public function user()
     {
-        return 'id';
+        return $this->belongsTo(User::class);
     }
+
 }
