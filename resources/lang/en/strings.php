@@ -33,6 +33,8 @@ return [
             'title'   => 'Articles'
         ],
 
+// Do not delete me :) I'm used for auto-generation
+
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',
             'are_you_sure'        => 'Are you sure you want to do this?',

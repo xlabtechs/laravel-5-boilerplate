@@ -47,7 +47,11 @@ return [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
             'system'    => 'System',
+            // **********Do_Not_Delete_me****************
+
         ],
+        // Do not delete me :) I'm used for auto-generation
+
     ],
 
     'language-picker' => [
