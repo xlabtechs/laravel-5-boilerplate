@@ -150,7 +150,7 @@ class UserRepository extends BaseRepository
      * @throws \Exception
      * @throws \Throwable
      */
-    public function update(User $user, array $data) : User
+    public function update($user, array $data) : User
     {
         $this->checkUserByEmail($user, $data['email']);
 
@@ -186,7 +186,7 @@ class UserRepository extends BaseRepository
      * @return User
      * @throws GeneralException
      */
-    public function updatePassword(User $user, $input) : User
+    public function updatePassword($user, $input) : User
     {
         $user->password = Hash::make($input['password']);
 
@@ -206,7 +206,7 @@ class UserRepository extends BaseRepository
      * @return User
      * @throws GeneralException
      */
-    public function mark(User $user, $status) : User
+    public function mark($user, $status) : User
     {
         if (auth()->id() == $user->id && $status == 0) {
             throw new GeneralException(__('exceptions.backend.access.users.cant_deactivate_self'));
@@ -237,7 +237,7 @@ class UserRepository extends BaseRepository
      * @return User
      * @throws GeneralException
      */
-    public function confirm(User $user) : User
+    public function confirm($user) : User
     {
         if ($user->confirmed) {
             throw new GeneralException(__('exceptions.backend.access.users.already_confirmed'));
@@ -266,7 +266,7 @@ class UserRepository extends BaseRepository
      * @return User
      * @throws GeneralException
      */
-    public function unconfirm(User $user) : User
+    public function unconfirm($user) : User
     {
         if (! $user->confirmed) {
             throw new GeneralException(__('exceptions.backend.access.users.not_confirmed'));
@@ -302,7 +302,7 @@ class UserRepository extends BaseRepository
      * @throws \Exception
      * @throws \Throwable
      */
-    public function forceDelete(User $user) : User
+    public function forceDelete($user) : User
     {
         if (is_null($user->deleted_at)) {
             throw new GeneralException(__('exceptions.backend.access.users.delete_first'));
@@ -328,7 +328,7 @@ class UserRepository extends BaseRepository
      * @return User
      * @throws GeneralException
      */
-    public function restore(User $user) : User
+    public function restore($user) : User
     {
         if (is_null($user->deleted_at)) {
             throw new GeneralException(__('exceptions.backend.access.users.cant_restore'));
@@ -349,7 +349,7 @@ class UserRepository extends BaseRepository
      *
      * @throws GeneralException
      */
-    protected function checkUserByEmail(User $user, $email)
+    protected function checkUserByEmail($user, $email)
     {
         //Figure out if email is not the same
         if ($user->email != $email) {
