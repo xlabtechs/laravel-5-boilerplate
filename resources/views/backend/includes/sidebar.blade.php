@@ -9,29 +9,6 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('admin.dashboard') }}"><i class="icon-speedometer"></i> {{ __('menus.backend.sidebar.dashboard') }}</a>
             </li>
 
-            <li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/branches')) }}" href=" {{ route('admin.branch.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.branches') }}</a>
-                </li>
-
-<li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/customers')) }}" href=" {{ route('admin.customer.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.customers') }}</a>
-                </li>
-
-<li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/employees')) }}" href=" {{ route('admin.employee.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.employees') }}</a>
-                </li>
-
-<li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/books')) }}" href=" {{ route('admin.book.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.books') }}</a>
-                </li>
-
-<li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/issues')) }}" href=" {{ route('admin.issue.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.issues') }}</a>
-                </li>
-
-<li class="nav-item">
-                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/reverses')) }}" href=" {{ route('admin.reverse.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.reverses') }}</a>
-                </li>
 
 {{--Do not delete me :) I'm used for auto-generation--}}
 
