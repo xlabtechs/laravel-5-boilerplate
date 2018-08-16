@@ -46,6 +46,7 @@ return [
         'sidebar' => [
             'dashboard' => 'Dasbor',
             'general'   => 'Umum',
+            'history'   => 'History',
             'system'    => 'Sistem',
         ],
     ],
@@ -67,6 +68,7 @@ return [
             'el'    => 'Yunani (Greek)',
             'en'    => 'Inggris (English)',
             'es'    => 'Spanyol (Spanish)',
+            'fa'    => 'Persia (Persian)',
             'fr'    => 'Perancis (French)',
             'he'    => 'Ibrani (Hebrew)',
             'id'    => 'Bahasa Indonesia (Indonesian)',

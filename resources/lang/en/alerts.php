@@ -41,7 +41,56 @@ return [
             'sent' => 'Your information was successfully sent. We will respond back to the e-mail provided as soon as we can.',
         ],
         
+        'branch' => [
+                'saved' => 'Branch saved successfully.',
+                'updated' => 'Branch saved successfully.',
+                'deleted' => 'Branch saved successfully.'
+        ],
+
+        'customer' => [
+                'saved' => 'Customer saved successfully.',
+                'updated' => 'Customer saved successfully.',
+                'deleted' => 'Customer saved successfully.'
+        ],
+
+        'employee' => [
+                'saved' => 'Employee saved successfully.',
+                'updated' => 'Employee saved successfully.',
+                'deleted' => 'Employee saved successfully.'
+        ],
+
+        'book' => [
+                'saved' => 'Book saved successfully.',
+                'updated' => 'Book saved successfully.',
+                'deleted' => 'Book saved successfully.'
+        ],
+
+        'update' => [
+                'saved' => 'Update saved successfully.',
+                'updated' => 'Update saved successfully.',
+                'deleted' => 'Update saved successfully.'
+        ],
+
+        'issue' => [
+                'saved' => 'Issue saved successfully.',
+                'updated' => 'Issue saved successfully.',
+                'deleted' => 'Issue saved successfully.'
+        ],
+
+        'reverse' => [
+                'saved' => 'Reverse saved successfully.',
+                'updated' => 'Reverse saved successfully.',
+                'deleted' => 'Reverse saved successfully.'
+        ],
+
         // Do not delete me :) I'm used for auto-generation
+
+
+
+
+
+
+
 
     ],
 ];

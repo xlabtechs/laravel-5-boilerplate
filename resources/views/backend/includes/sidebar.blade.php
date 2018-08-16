@@ -9,7 +9,37 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('admin.dashboard') }}"><i class="icon-speedometer"></i> {{ __('menus.backend.sidebar.dashboard') }}</a>
             </li>
 
-            {{--Do not delete me :) I'm used for auto-generation--}}
+            <li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/branches')) }}" href=" {{ route('admin.branch.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.branches') }}</a>
+                </li>
+
+<li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/customers')) }}" href=" {{ route('admin.customer.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.customers') }}</a>
+                </li>
+
+<li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/employees')) }}" href=" {{ route('admin.employee.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.employees') }}</a>
+                </li>
+
+<li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/books')) }}" href=" {{ route('admin.book.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.books') }}</a>
+                </li>
+
+<li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/issues')) }}" href=" {{ route('admin.issue.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.issues') }}</a>
+                </li>
+
+<li class="nav-item">
+                    <a class="nav-link {{ active_class(Active::checkUriPattern('admin/reverses')) }}" href=" {{ route('admin.reverse.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.reverses') }}</a>
+                </li>
+
+{{--Do not delete me :) I'm used for auto-generation--}}
+
+
+
+
+
+
 
             <li class="nav-title">
                 {{ __('menus.backend.sidebar.system') }}
@@ -17,7 +47,7 @@
 
             @if ($logged_in_user->isAdmin())
                 <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/auth*'), 'open') }}">
-                    <a class="nav-link nav-dropdown-toggle" href="#">
+                    <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/auth*')) }}" href="#">
                         <i class="icon-user"></i> {{ __('menus.backend.access.title') }}
 
                         @if ($pending_approval > 0)
@@ -45,7 +75,7 @@
             @endif
 
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
-                <a class="nav-link nav-dropdown-toggle" href="#">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/log-viewer*')) }}" href="#">
                     <i class="icon-list"></i> {{ __('menus.backend.log-viewer.main') }}
                 </a>
 

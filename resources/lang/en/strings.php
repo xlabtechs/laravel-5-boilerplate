@@ -33,7 +33,42 @@ return [
             'title'   => 'Articles'
         ],
 
+'branches' => [
+            'title'   => 'Branches'
+    ],
+
+'customers' => [
+            'title'   => 'Customers'
+    ],
+
+'employees' => [
+            'title'   => 'Employees'
+    ],
+
+'books' => [
+            'title'   => 'Books'
+    ],
+
+'updates' => [
+            'title'   => 'Updates'
+    ],
+
+'issues' => [
+            'title'   => 'Issues'
+    ],
+
+'reverses' => [
+            'title'   => 'Reverses'
+    ],
+
 // Do not delete me :) I'm used for auto-generation
+
+
+
+
+
+
+
 
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',

@@ -60,18 +60,6 @@
                     </div><!--form-group-->
 
                     <div class="form-group row">
-                        {{ html()->label(__('validation.attributes.backend.access.users.timezone'))->class('col-md-2 form-control-label')->for('timezone') }}
-
-                        <div class="col-md-10">
-                            <select name="timezone" id="timezone" class="form-control" required="required">
-                                @foreach (timezone_identifiers_list() as $timezone)
-                                    <option value="{{ $timezone }}" {{ $timezone == $logged_in_user->timezone ? 'selected' : '' }} {{ $timezone == old('timezone') ? ' selected' : '' }}>{{ $timezone }}</option>
-                                @endforeach
-                            </select>
-                        </div><!--col-->
-                    </div><!--form-group-->
-
-                    <div class="form-group row">
                         {{ html()->label('Abilities')->class('col-md-2 form-control-label') }}
 
                         <div class="table-responsive col-md-10">
@@ -104,7 +92,7 @@
                                                             @if ($role->id != 1)
                                                                 @if ($role->permissions->count())
                                                                     @foreach ($role->permissions as $permission)
-                                                                        <i class="fa fa-dot-circle-o"></i> {{ ucwords($permission->name) }}
+                                                                        <i class="fas fa-dot-circle"></i> {{ ucwords($permission->name) }}
                                                                     @endforeach
                                                                 @else
                                                                     {{ __('labels.general.none') }}

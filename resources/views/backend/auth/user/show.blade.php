@@ -22,7 +22,7 @@
             <div class="col">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-expanded="true"><i class="fa fa-user"></i> {{ __('labels.backend.access.users.tabs.titles.overview') }}</a>
+                        <a class="nav-link active" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-expanded="true"><i class="fas fa-user"></i> {{ __('labels.backend.access.users.tabs.titles.overview') }}</a>
                     </li>
                 </ul>
 
@@ -39,10 +39,10 @@
         <div class="row">
             <div class="col">
                 <small class="float-right text-muted">
-                    <strong>{{ __('labels.backend.access.users.tabs.content.overview.created_at') }}:</strong> {{ $user->updated_at->timezone(get_user_timezone()) }} ({{ $user->created_at->diffForHumans() }}),
-                    <strong>{{ __('labels.backend.access.users.tabs.content.overview.last_updated') }}:</strong> {{ $user->created_at->timezone(get_user_timezone()) }} ({{ $user->updated_at->diffForHumans() }})
+                    <strong>{{ __('labels.backend.access.users.tabs.content.overview.created_at') }}:</strong> {{ timezone()->convertToLocal($user->created_at) }} ({{ $user->created_at->diffForHumans() }}),
+                    <strong>{{ __('labels.backend.access.users.tabs.content.overview.last_updated') }}:</strong> {{ timezone()->convertToLocal($user->updated_at) }} ({{ $user->updated_at->diffForHumans() }})
                     @if ($user->trashed())
-                        <strong>{{ __('labels.backend.access.users.tabs.content.overview.deleted_at') }}:</strong> {{ $user->deleted_at->timezone(get_user_timezone()) }} ({{ $user->deleted_at->diffForHumans() }})
+                        <strong>{{ __('labels.backend.access.users.tabs.content.overview.deleted_at') }}:</strong> {{ timezone()->convertToLocal($user->deleted_at) }} ({{ $user->deleted_at->diffForHumans() }})
                     @endif
                 </small>
             </div><!--col-->

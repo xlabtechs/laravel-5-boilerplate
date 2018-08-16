@@ -46,6 +46,7 @@ return [
         'sidebar' => [
             'dashboard' => 'اللوحة الرئيسية',
             'general'   => 'عام',
+            'history'   => 'History',
             'system'    => 'System',
         ],
     ],
@@ -67,6 +68,7 @@ return [
             'el'    => '(Greek)',
             'en'    => 'الإنجليزية (English)',
             'es'    => 'الأسبانية (Spanish)',
+            'fa'    => 'الفارسیة (Persian)',
             'fr'    => 'الفرنسية (French)',
             'he'    => 'العبرية (Hebrew)',
             'id'    => 'الأندونيسية (Indonesian)',
