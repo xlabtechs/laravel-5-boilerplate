@@ -83,6 +83,12 @@ return [
                 'deleted' => 'Reverse saved successfully.'
         ],
 
+                'test' => [
+                'saved' => 'Test saved successfully.',
+                'updated' => 'Test saved successfully.',
+                'deleted' => 'Test saved successfully.'
+        ],
+
         // Do not delete me :) I'm used for auto-generation
 
 

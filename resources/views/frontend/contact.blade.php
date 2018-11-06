@@ -1,6 +1,10 @@
 @extends('frontend.layouts.app')
 
+
 @section('title', app_name() . ' | '.__('labels.frontend.contact.box_title'))
+
+@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+
 
 @section('content')
     <div class="row justify-content-center">
@@ -8,7 +12,7 @@
             <div class="card">
                 <div class="card-header">
                     <strong>
-                        {{ __('labels.frontend.contact.box_title') }}
+                        @lang('labels.frontend.contact.box_title')
                     </strong>
                 </div><!--card-header-->
 
@@ -19,7 +23,7 @@
                                 <div class="form-group">
                                     {{ html()->label(__('validation.attributes.frontend.name'))->for('name') }}
 
-                                    {{ html()->text('name')
+                                    {{ html()->text('name', optional(auth()->user())->name)
                                         ->class('form-control')
                                         ->placeholder(__('validation.attributes.frontend.name'))
                                         ->attribute('maxlength', 191)
@@ -34,7 +38,7 @@
                                 <div class="form-group">
                                     {{ html()->label(__('validation.attributes.frontend.email'))->for('email') }}
 
-                                    {{ html()->email('email')
+                                    {{ html()->email('email', optional(auth()->user())->email)
                                         ->class('form-control')
                                         ->placeholder(__('validation.attributes.frontend.email'))
                                         ->attribute('maxlength', 191)

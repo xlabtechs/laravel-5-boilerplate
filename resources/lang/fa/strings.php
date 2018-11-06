@@ -64,6 +64,7 @@ return [
             'results'    => 'نتایج جستجو برای :query',
         ],
 
+
         'welcome' => '<p>تم CoreUI توسط <a href="https://coreui.io/" target="_blank">creativeLabs</a> ایجاد شده است. این یک نسخه دسته پایین با تنها سبک و اسکریپت‌های لازم برای اجرای آن است. نسخه کامل را برای شروع افزودن اجزای به داشبورد خود دانلود کنید.
 </p>
 <p>تمام قابلیت‌ها برای نمایش است به استثنای <strong> مدیریت دسترسی </strong> که در سمت چپ است. این بسته همراه با یک کتابخانه کنترل دسترسی کامل به منظور مدیریت کاربران و نقش‌ها توسط <a href="https://github.com/spatie/laravel-permission" target="_blank">spatie/laravel-permission</a> ایجاد شده است. </p>
@@ -72,6 +73,9 @@ return [
 <p><strong> این پروژه  به شدت نیازمند نگه داشتن نرخ تغییر بر اساس نرخ تغییرات شاخه اصلی لاروول است، بنابراین از هر گونه کمک شما قدردانی می‌شود.</strong></p>
 <p> - آنتونی رپا </p>
 <p>- Anthony Rappa</p>',
+
+        'welcome' => 'Welcome to the Dashboard',
+
     ],
 
     'emails' => [

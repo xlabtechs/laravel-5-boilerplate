@@ -55,6 +55,7 @@ return [
         'updates'    => 'Updates',
         'issues'    => 'Issues',
         'reverses'    => 'Reverses',
+                'tests'    => 'Tests',
         // **********Do_Not_Delete_me****************
 
 
@@ -120,6 +121,14 @@ return [
                         'edit'       => 'Edit Reverse',
                         'management' => 'Reverse Management',
                         'main'       => 'Reverses',
+            ],
+                        'tests' => [
+                        'view'        => 'View Test',
+                        'all'        => 'All Tests',
+                        'create'     => 'Create Test',
+                        'edit'       => 'Edit Test',
+                        'management' => 'Test Management',
+                        'main'       => 'Tests',
             ],
             // Do not delete me :) I'm used for auto-generation
 

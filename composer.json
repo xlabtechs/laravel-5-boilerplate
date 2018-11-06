@@ -9,13 +9,14 @@
         "appstract/laravel-blade-directives": "^0.4.4",
         "arcanedev/log-viewer": "^4.5",
         "arcanedev/no-captcha": "^5.0",
-        "beyondcode/laravel-self-diagnosis": "^0.4.1",
+
+        "beyondcode/laravel-self-diagnosis": "^1.0",
         "creativeorange/gravatar": "~1.0",
         "davejamesmiller/laravel-breadcrumbs": "^5.0",
         "divineomega/laravel-password-exposed-validation-rule": "^1.2",
         "fideloper/proxy": "^4.0",
         "hieu-le/active": "^3.5",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": "5.7.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
         "sofa/eloquence": "^5.6",
@@ -24,14 +25,17 @@
         "torann/geoip": "^1.0",
         "webpatser/laravel-uuid": "^3.0",
         "spatie/laravel-sluggable": "^2.1",
-        "webpatser/laravel-uuid": "^3.0",
-        "friendsofphp/php-cs-fixer":"",
-        "xlab/l5-repository": "dev-master",
-        "xlabtechs/laravel-generator": "dev-master"
+
+        "friendsofphp/php-cs-fixer":"dev-master",
+        "xlab/l5-repository": "dev-master"
+
+
+
 
 
     },
     "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.0",
         "barryvdh/laravel-debugbar": "^3.0",
         "barryvdh/laravel-ide-helper": "^2.4",
         "codedungeon/phpunit-result-printer": "^0.19.10",
@@ -69,13 +73,13 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate"
+            "@php artisan key:generate --ansi"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:meta",
-            "@php artisan package:discover"
+            "@php artisan package:discover --ansi"
         ],
         "clear-all": [
             "@php artisan clear-compiled",
@@ -114,14 +118,8 @@
         {
             "url": "https://github.com/xlabtechs/l5-repository.git",
             "type": "git"
-        },
-        {
-            "type": "path",
-            "url": "packages/xlabtechs/laravel-generator",
-            "options": {
-                "symlink": true
-            }
         }
+
     ],
     "config": {
         "preferred-install": "dist",

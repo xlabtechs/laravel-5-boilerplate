@@ -30,6 +30,10 @@ return [
         'none'              => 'None',
         'show'              => 'Show',
         'toggle_navigation' => 'Toggle Navigation',
+        'create_new'        => 'Create New',
+        'toolbar_btn_groups' => 'Toolbar with button groups',
+        'more'              => 'More',
+        'none'              => 'None',
     ],
 
     'backend' => [
@@ -61,6 +65,7 @@ return [
                 'no_permissions'      => 'No Permissions',
                 'no_roles'            => 'No Roles to set.',
                 'permissions'         => 'Permissions',
+                'user_actions'        => 'User Actions',
 
                 'table' => [
                     'confirmed'      => 'Confirmed',
@@ -74,9 +79,10 @@ return [
                     'no_deactivated' => 'No Deactivated Users',
                     'no_deleted'     => 'No Deleted Users',
                     'other_permissions' => 'Other Permissions',
-                    'permissions' => 'Permissions',
+                    'permissions'    => 'Permissions',
+                    'abilities'      => 'Abilities',
                     'roles'          => 'Roles',
-                    'social' => 'Social',
+                    'social'         => 'Social',
                     'total'          => 'user total|users total',
                 ],
 
@@ -275,6 +281,35 @@ return [
                      'deleted_at'    => 'Deleted At',
                     'last_updated'  => 'Last Update',
                                                                                                 
+            ]
+            ],
+
+
+            
+            'tests' => [
+            'management' => 'Tests Management',
+            'create'     => 'Create Test',
+            'view' => 'View Test',
+            'edit'       => 'Edit Test',
+
+            'table' => [
+                    'name' => "Name", 
+                    'create_at' => "Create At", 
+                    'updated_at' => "Updated At", 
+                    'description' => "Description", 
+                    'is_deleted' => "Is Deleted", 
+                    'radius' => "Radius", 
+                    'sort'  => 'Sort',
+                    'total' => 'tests total|tests total',
+            ],
+
+
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',      
+
+
             ]
             ],
 

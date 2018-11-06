@@ -231,7 +231,22 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
         $this->resetModel();
         $this->resetScope();
 
+
         return $this->parserResult($results);
+    }
+    /**
+     * Set query scopes.
+     *
+     * @return $this
+     */
+    protected function setScopes()
+    {
+        foreach ($this->scopes as $method => $args) {
+            $this->query->$method(...$args);
+        }
+
+        return $this;
+
     }
 
 
@@ -240,5 +255,20 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
             parent::update($model->id, $attributes);
         else
             parent::update($model, $attributes);
+    }
+
+    /**
+     * Add the given query scope.
+     *
+     * @param string $scope
+     * @param array $args
+     *
+     * @return $this
+     */
+    public function __call($scope, $args)
+    {
+        $this->scopes[$scope] = $args;
+
+        return $this;
     }
 }
