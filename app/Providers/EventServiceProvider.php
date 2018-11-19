@@ -42,7 +42,6 @@ class EventServiceProvider extends ServiceProvider
          */
         \App\Listeners\Backend\Auth\User\UserEventListener::class,
         \App\Listeners\Backend\Auth\Role\RoleEventListener::class,
-        // Do not delete me :) I'm used for auto-generation
     ];
 
     /**
