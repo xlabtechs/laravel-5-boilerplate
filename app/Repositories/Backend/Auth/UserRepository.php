@@ -150,7 +150,7 @@ class UserRepository extends BaseRepository
      * @throws \Exception
      * @throws \Throwable
      */
-    public function update($user, array $data) : User
+    public function update($user,  $data) : User
     {
         $this->checkUserByEmail($user, $data['email']);
 
