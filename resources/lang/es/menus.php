@@ -38,7 +38,7 @@ return [
         ],
 
         'log-viewer' => [
-            'main'      => 'Gestór de Logs',
+            'main'      => 'Gestor de Logs',
             'dashboard' => 'Principal',
             'logs'      => 'Logs',
         ],
@@ -46,6 +46,7 @@ return [
         'sidebar' => [
             'dashboard' => 'Principal',
             'general'   => 'General',
+            'history'   => 'Historia',
             'system'    => 'Sistema',
         ],
     ],
@@ -67,6 +68,7 @@ return [
             'el'    => '(Greek)',
             'en'    => 'Inglés (English)',
             'es'    => 'Español (Spanish)',
+            'fa'    => 'Persa (Persian)',
             'fr'    => 'Francés (French)',
             'he'    => 'Hebreo (Hebrew)',
             'id'    => 'Indonesio (Indonesian)',

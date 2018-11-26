@@ -46,7 +46,8 @@ return [
         'sidebar' => [
             'dashboard' => 'แผงควบคุม',
             'general'   => 'ทั่วไป',
-        'system'        => 'ระบบ',
+            'history'   => 'History',
+               'system'        => 'ระบบ',
         ],
     ],
 
@@ -67,6 +68,7 @@ return [
             'el'    => '(Greek)',
             'en'    => 'อังกฤษ (English)',
             'es'    => 'สเปน (Spanish)',
+            'fa'    => 'เปอร์เซีย (Persian)',
             'fr'    => 'ฝรั่งเศส (French)',
             'he'    => 'ชาวอิสราเอล (Hebrew)',
             'id'    => 'ชาวอินโดนีเซีย (Indonesian)',

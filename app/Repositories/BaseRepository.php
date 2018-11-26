@@ -235,7 +235,7 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
     }
 
 
-    public function update($model, array $attributes) {
+    public function update($model,  $attributes) {
         if ($model instanceof Model)
             parent::update($model->id, $attributes);
         else
