@@ -8,6 +8,13 @@
 trait Test20Attribute
 {
     /**
+     * @return   test20
+    */
+    public function getViewButtonAttribute()
+    {
+        return '<a href="'.route('admin.test20.show', $this).'" class="btn btn-secondary"><i class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="'.__('buttons.general.crud.view').'"></i></a>';
+    }
+    /**
      * @return string  test20
      */
     public function getEditButtonAttribute()
@@ -40,6 +47,7 @@ trait Test20Attribute
 
       return '<div
        class="btn-group btn-group-sm" test20="group" aria-label="Test20 Actions">
+			  '.$this->view_button.'
 			  '.$this->edit_button.'
 			  '.$this->delete_button.'
 
