@@ -196,6 +196,14 @@ return [
             'zipcode' => "Zipcode",
         ],
         //end_Test19_end
+    //start_Test20_start
+        'test20s'  => [
+            'id' => "Id",
+            'name' => " Name",
+            'status' => "Status",
+            'zipcode' => "Zipcode",
+        ],
+        //end_Test20_end
 // Do not delete me :) I'm used for auto-generation
 
         ],

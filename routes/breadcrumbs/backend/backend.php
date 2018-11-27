@@ -29,6 +29,31 @@ $breadcrumbs->push(__('menus.backend.test19s.edit'), route('admin.test19.edit', 
 });
 //end_Test19_end
 
+
+//start_Test20_start
+Breadcrumbs::register('admin.test20.index', function ($breadcrumbs) {
+$breadcrumbs->parent('admin.dashboard');
+$breadcrumbs->push(__('strings.backend.test20s.title'), route('admin.test20.index'));
+});
+
+
+
+Breadcrumbs::register('admin.test20.create', function ($breadcrumbs) {
+$breadcrumbs->parent('admin.test20.index');
+$breadcrumbs->push(__('labels.backend.test20s.create'), route('admin.test20.create'));
+});
+
+Breadcrumbs::register('admin.test20.show', function ($breadcrumbs, $id) {
+$breadcrumbs->parent('admin.test20.index');
+$breadcrumbs->push(__('menus.backend.test20s.view'), route('admin.test20.show', $id));
+});
+
+Breadcrumbs::register('admin.test20.edit', function ($breadcrumbs, $id) {
+$breadcrumbs->parent('admin.test20.index');
+$breadcrumbs->push(__('menus.backend.test20s.edit'), route('admin.test20.edit', $id));
+});
+//end_Test20_end
+
 //*****Do Not Delete Me
 
 require __DIR__.'/auth.php';

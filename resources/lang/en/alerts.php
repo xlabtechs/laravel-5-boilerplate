@@ -49,6 +49,14 @@ return [
         ],
         //end_Test19_end
 
+            //start_Test20_start
+        'test20' => [
+                'saved' => 'Test20 saved successfully.',
+                'updated' => 'Test20 updated successfully.',
+                'deleted' => 'Test20 deleted successfully.'
+        ],
+        //end_Test20_end
+
         // Do not delete me :) I'm used for auto-generation
 
     ],
