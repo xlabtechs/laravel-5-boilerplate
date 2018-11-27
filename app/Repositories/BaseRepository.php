@@ -105,6 +105,8 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
     public function deleteById($id): bool
     {
         parent::delete($id);
+        return true;
+
     }
 
     /**
@@ -236,9 +238,10 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
 
 
     public function update($model,  $attributes) {
+
         if ($model instanceof Model)
-            parent::update($model->id, $attributes);
+            parent::update( $attributes,$model->id);
         else
-            parent::update($model, $attributes);
+            parent::update($attributes,$model);
     }
 }
