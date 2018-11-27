@@ -13,7 +13,7 @@ use \Illuminate\Http\Request;
 /**
  * Class BaseRepository.
  */
-abstract class BaseRepository  extends PrettusBaseRepository implements RepositoryContract
+abstract class BaseRepository extends PrettusBaseRepository implements RepositoryContract
 {
 
     protected $defaultOrderBy;
@@ -237,11 +237,12 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
     }
 
 
-    public function update($model,  $attributes) {
+    public function update($model, $attributes)
+    {
 
         if ($model instanceof Model)
-            parent::update( $attributes,$model->id);
+            parent::update($attributes, $model->id);
         else
-            parent::update($attributes,$model);
+            parent::update($attributes, $model);
     }
 }
