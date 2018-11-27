@@ -188,7 +188,15 @@ return [
 
 
 
-            // Do not delete me :) I'm used for auto-generation
+                //start_Test19_start
+        'test19s'  => [
+            'id' => "Id",
+            'name' => " Name",
+            'status' => "Status",
+            'zipcode' => "Zipcode",
+        ],
+        //end_Test19_end
+// Do not delete me :) I'm used for auto-generation
 
         ],
 

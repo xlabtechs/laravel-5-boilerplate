@@ -48,10 +48,24 @@ return [
             'general'   => 'General',
             'history'   => 'History',
             'system'    => 'System',
-            // **********Do_Not_Delete_me****************
+                 //begin_Test19_begin
+        'test19s'    => 'Test19s',
+         //finish_Test19_finish
+        // **********Do_Not_Delete_me****************
 
         ],
-        // Do not delete me :) I'm used for auto-generation
+             //start_Test19_start
+            'test19s' => [
+                        'view'        => 'View Test19',
+                        'all'        => 'All Test19s',
+                        'create'     => 'Create Test19',
+                        'edit'       => 'Edit Test19',
+                        'management' => 'Test19 Management',
+                        'main'       => 'Test19s',
+            ],
+             //end_Test19_end
+
+            // Do not delete me :) I'm used for auto-generation
 
     ],
 

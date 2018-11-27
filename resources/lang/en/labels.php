@@ -115,7 +115,34 @@ return [
             ],
         ],
 
-        // Do not delete me :) I'm used for auto-generation
+              //start_Test19_start
+            'test19s' => [
+            'management' => 'Test19s Management',
+            'create'     => 'Create Test19',
+            'view' => 'View Test19',
+            'edit'       => 'Edit Test19',
+
+            'table' => [
+                    'id' => "Id", 
+                    'name' => " Name", 
+                    'status' => "Status", 
+                    'zipcode' => "Zipcode", 
+                    'sort'  => 'Sort',
+                    'total' => 'test19s total|test19s total',
+            ],
+
+
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',    
+
+
+                  ]
+            ],
+            //end_Test19_end
+
+            // Do not delete me :) I'm used for auto-generation
 
 
     ],
