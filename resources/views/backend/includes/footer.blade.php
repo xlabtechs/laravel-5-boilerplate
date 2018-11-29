@@ -1,6 +1,6 @@
 <footer class="app-footer">
     <div>
-        <strong>@lang('labels.general.copyright') &copy; {{ date('Y') }} <a href="http://laravel-boilerplate.com">@lang('strings.backend.general.boilerplate_link')</a></strong> @lang('strings.backend.general.all_rights_reserved')
+        <strong>@lang('labels.general.copyright') &copy; {{ date('Y') }} <a href="https://try.devyzer.com/">@lang('strings.backend.general.xlabtechs_link')</a></strong> @lang('strings.backend.general.all_rights_reserved')
     </div>
     <span class="float-left"><strong>{{ __('labels.general.copyright') }} &copy; {{ date('Y') }} <a href="https://www.xlabtechs.com">{{ __('strings.backend.general.xlabtechs_link') }}</a></strong> {{ __('strings.backend.general.all_rights_reserved') }}</span>
 
