@@ -9,17 +9,6 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('admin.dashboard') }}"><i class="icon-speedometer"></i> {{ __('menus.backend.sidebar.dashboard') }}</a>
             </li>
 
-                    {{--start_Test19_start--}}
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/test19s')) }}" href=" {{ route('admin.test19.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.test19s') }}</a>
-            </li>
-            {{--end_Test19_end--}}
-
-        {{--start_Test20_start--}}
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/test20s')) }}" href=" {{ route('admin.test20.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.test20s') }}</a>
-            </li>
-            {{--end_Test20_end--}}
 
 {{--Do not delete me :) I'm used for auto-generation--}}
 

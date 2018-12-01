@@ -48,36 +48,11 @@ return [
             'general'   => 'General',
             'history'   => 'History',
             'system'    => 'System',
-                 //begin_Test19_begin
-        'test19s'    => 'Test19s',
-         //finish_Test19_finish
-             //begin_Test20_begin
-        'test20s'    => 'Test20s',
-         //finish_Test20_finish
+
         // **********Do_Not_Delete_me****************
 
         ],
-             //start_Test19_start
-            'test19s' => [
-                        'view'        => 'View Test19',
-                        'all'        => 'All Test19s',
-                        'create'     => 'Create Test19',
-                        'edit'       => 'Edit Test19',
-                        'management' => 'Test19 Management',
-                        'main'       => 'Test19s',
-            ],
-             //end_Test19_end
 
-                 //start_Test20_start
-            'test20s' => [
-                        'view'        => 'View Test20',
-                        'all'        => 'All Test20s',
-                        'create'     => 'Create Test20',
-                        'edit'       => 'Edit Test20',
-                        'management' => 'Test20 Management',
-                        'main'       => 'Test20s',
-            ],
-             //end_Test20_end
 
             // Do not delete me :) I'm used for auto-generation
 

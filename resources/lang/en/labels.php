@@ -115,59 +115,6 @@ return [
             ],
         ],
 
-              //start_Test19_start
-            'test19s' => [
-            'management' => 'Test19s Management',
-            'create'     => 'Create Test19',
-            'view' => 'View Test19',
-            'edit'       => 'Edit Test19',
-
-            'table' => [
-                    'id' => "Id", 
-                    'name' => " Name", 
-                    'status' => "Status", 
-                    'zipcode' => "Zipcode", 
-                    'sort'  => 'Sort',
-                    'total' => 'test19s total|test19s total',
-            ],
-
-
-            'content' => [
-                    'created_at'    => 'Created At',
-                     'deleted_at'    => 'Deleted At',
-                    'last_updated'  => 'Last Update',    
-
-
-                  ]
-            ],
-            //end_Test19_end
-
-                  //start_Test20_start
-            'test20s' => [
-            'management' => 'Test20s Management',
-            'create'     => 'Create Test20',
-            'view' => 'View Test20',
-            'edit'       => 'Edit Test20',
-
-            'table' => [
-                    'id' => "Id", 
-                    'name' => " Name", 
-                    'status' => "Status", 
-                    'zipcode' => "Zipcode", 
-                    'sort'  => 'Sort',
-                    'total' => 'test20s total|test20s total',
-            ],
-
-
-            'content' => [
-                    'created_at'    => 'Created At',
-                     'deleted_at'    => 'Deleted At',
-                    'last_updated'  => 'Last Update',    
-
-
-                  ]
-            ],
-            //end_Test20_end
 
             // Do not delete me :) I'm used for auto-generation
 
