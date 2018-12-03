@@ -104,10 +104,9 @@ abstract class BaseRepository extends PrettusBaseRepository implements Repositor
      */
     public function deleteById($id): bool
     {
-        parent::delete($id);
-        return true;
-
+        return parent::delete($id);
     }
+
 
     /**
      * Delete multiple records.
