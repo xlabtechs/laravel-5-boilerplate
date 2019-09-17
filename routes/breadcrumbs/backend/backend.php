@@ -1,8 +1,10 @@
 <?php
 
-Breadcrumbs::register('admin.dashboard', function ($breadcrumbs) {
-    $breadcrumbs->push(__('strings.backend.dashboard.title'), route('admin.dashboard'));
+Breadcrumbs::for('admin.dashboard', function ($trail) {
+    $trail->push(__('strings.backend.dashboard.title'), route('admin.dashboard'));
 });
+
+
 
 //*****Do Not Delete Me
 

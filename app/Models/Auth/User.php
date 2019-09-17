@@ -45,6 +45,8 @@ class User extends Authenticatable
         'confirmation_code',
         'confirmed',
         'timezone',
+        'last_login_at',
+        'last_login_ip',
     ];
 
     /**
@@ -57,11 +59,21 @@ class User extends Authenticatable
     /**
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $dates = ['last_login_at', 'deleted_at'];
 
     /**
      * The dynamic attributes from mutators that should be returned with the user object.
      * @var array
      */
     protected $appends = ['full_name'];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'active' => 'boolean',
+        'confirmed' => 'boolean',
+    ];
 }

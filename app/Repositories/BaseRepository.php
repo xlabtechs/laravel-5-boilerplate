@@ -13,7 +13,7 @@ use \Illuminate\Http\Request;
 /**
  * Class BaseRepository.
  */
-abstract class BaseRepository  extends PrettusBaseRepository implements RepositoryContract
+abstract class BaseRepository extends PrettusBaseRepository implements RepositoryContract
 {
 
     protected $defaultOrderBy;
@@ -104,9 +104,9 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
      */
     public function deleteById($id): bool
     {
-        return  parent::delete($id);
-        return true;
+        return parent::delete($id);
     }
+
 
     /**
      * Delete multiple records.
@@ -236,11 +236,12 @@ abstract class BaseRepository  extends PrettusBaseRepository implements Reposito
     }
 
 
-    public function update($model,  $attributes) {
+    public function update($model, $attributes)
+    {
+
         if ($model instanceof Model)
-            parent::update($model->id, $attributes);
+            parent::update($attributes, $model->id);
         else
-            parent::update($model, $attributes);
-        return true;
+            parent::update($attributes, $model);
     }
 }

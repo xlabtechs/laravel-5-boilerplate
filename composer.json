@@ -9,25 +9,29 @@
         "appstract/laravel-blade-directives": "^0.4.4",
         "arcanedev/log-viewer": "^4.5",
         "arcanedev/no-captcha": "^5.0",
+        "beyondcode/laravel-self-diagnosis": "^1.0",
         "creativeorange/gravatar": "~1.0",
-        "davejamesmiller/laravel-breadcrumbs": "^5.0",
+        "davejamesmiller/laravel-breadcrumbs": "^5.2",
+        "divineomega/laravel-password-exposed-validation-rule": "^1.2",
         "fideloper/proxy": "^4.0",
         "hieu-le/active": "^3.5",
         "iatstuti/laravel-cascade-soft-deletes": "^1.5",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": "5.7.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
+        "prettus/l5-repository": "^2.6",
         "sofa/eloquence": "^5.6",
         "spatie/laravel-html": "^2.4",
         "spatie/laravel-permission": "^2.5",
         "spatie/laravel-sluggable": "^2.1",
-        "webpatser/laravel-uuid": "^3.0",
-        "xlab/l5-repository": "dev-master"
+        "torann/geoip": "^1.0",
+        "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.0",
         "barryvdh/laravel-debugbar": "^3.0",
         "barryvdh/laravel-ide-helper": "^2.4",
-        "codedungeon/phpunit-result-printer": "^0.6.0",
+        "codedungeon/phpunit-result-printer": "^0.19.10",
         "filp/whoops": "^2.0",
         "friendsofphp/php-cs-fixer": "^2.10",
         "fzaninotto/faker": "^1.4",
@@ -76,10 +80,24 @@
             "@php artisan cache:clear",
             "@php artisan route:clear",
             "@php artisan view:clear",
-            "@php artisan config:clear"
+            "@php artisan config:clear",
+            "composer dumpautoload -o"
+        ],
+        "cache-all": [
+            "@php artisan config:cache",
+            "@php artisan route:cache"
         ],
         "phpunit": [
             "phpunit > output.txt -d memory_limit=2048M"
+        ],
+        "coverage-xml": [
+            "phpunit --coverage-clover ./coverage.xml"
+        ],
+        "coverage-html": [
+            "phpunit --coverage-html ./coverage"
+        ],
+        "coverage-text": [
+            "phpunit --coverage-text"
         ],
         "format": [
             "./vendor/bin/php-cs-fixer fix app/  --show-progress=estimating",
@@ -90,12 +108,6 @@
             "./vendor/bin/php-cs-fixer fix tests/  --show-progress=estimating"
         ]
     },
-    "repositories": [
-        {
-            "url": "https://github.com/xlabtechs/l5-repository.git",
-            "type": "git"
-        }
-    ],
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,

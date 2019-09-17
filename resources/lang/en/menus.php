@@ -46,11 +46,15 @@ return [
         'sidebar' => [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
-            'system'    => 'System',
-            // **********Do_Not_Delete_me****************
+            'history'   => 'History',
+            'system'    => 'System'
 
-        ],
-        // Do not delete me :) I'm used for auto-generation
+        // **********Do_Not_Delete_me****************
+
+        ]
+
+
+            // Do not delete me :) I'm used for auto-generation
 
     ],
 
@@ -71,6 +75,7 @@ return [
             'el'    => 'Greek',
             'en'    => 'English',
             'es'    => 'Spanish',
+            'fa'    => 'Persian',
             'fr'    => 'French',
             'he'    => 'Hebrew',
             'id'    => 'Indonesian',

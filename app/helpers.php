@@ -1,5 +1,6 @@
 <?php
 
+use App\Helpers\General\Timezone;
 use App\Helpers\General\HtmlHelper;
 
 /*
@@ -24,6 +25,16 @@ if (! function_exists('gravatar')) {
     function gravatar()
     {
         return app('gravatar');
+    }
+}
+
+if (! function_exists('timezone')) {
+    /**
+     * Access the timezone helper.
+     */
+    function timezone()
+    {
+        return resolve(Timezone::class);
     }
 }
 
@@ -134,17 +145,20 @@ if (! function_exists('form_submit')) {
     }
 }
 
-if (! function_exists('get_user_timezone')) {
+if (! function_exists('camelcase_to_word')) {
 
     /**
+     * @param $str
+     *
      * @return string
      */
-    function get_user_timezone()
+    function camelcase_to_word($str)
     {
-        if (auth()->user()) {
-            return auth()->user()->timezone;
-        }
-
-        return 'UTC';
+        return implode(' ', preg_split('/
+          (?<=[a-z])
+          (?=[A-Z])
+        | (?<=[A-Z])
+          (?=[A-Z][a-z])
+        /x', $str));
     }
 }

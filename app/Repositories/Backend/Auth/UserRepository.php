@@ -6,7 +6,6 @@ use App\Models\Auth\User;
 use Illuminate\Support\Facades\DB;
 use App\Exceptions\GeneralException;
 use App\Repositories\BaseRepository;
-use Illuminate\Support\Facades\Hash;
 use App\Events\Backend\Auth\User\UserCreated;
 use App\Events\Backend\Auth\User\UserUpdated;
 use App\Events\Backend\Auth\User\UserRestored;
@@ -105,8 +104,7 @@ class UserRepository extends BaseRepository
                 'first_name' => $data['first_name'],
                 'last_name' => $data['last_name'],
                 'email' => $data['email'],
-                'timezone' => $data['timezone'],
-                'password' => Hash::make($data['password']),
+                'password' => $data['password'],
                 'active' => isset($data['active']) && $data['active'] == '1' ? 1 : 0,
                 'confirmation_code' => md5(uniqid(mt_rand(), true)),
                 'confirmed' => isset($data['confirmed']) && $data['confirmed'] == '1' ? 1 : 0,
@@ -164,7 +162,6 @@ class UserRepository extends BaseRepository
                 'first_name' => $data['first_name'],
                 'last_name' => $data['last_name'],
                 'email' => $data['email'],
-                'timezone' => $data['timezone'],
             ])) {
                 // Add selected roles/permissions
                 $user->syncRoles($data['roles']);
@@ -188,9 +185,7 @@ class UserRepository extends BaseRepository
      */
     public function updatePassword($user, $input) : User
     {
-        $user->password = Hash::make($input['password']);
-
-        if ($user->save()) {
+        if ($user->update(['password' => $input['password']])) {
             event(new UserPasswordChanged($user));
 
             return $user;
@@ -310,7 +305,9 @@ class UserRepository extends BaseRepository
 
         return DB::transaction(function () use ($user) {
             // Delete associated relationships
+            $user->passwordHistories()->delete();
             $user->providers()->delete();
+            $user->sessions()->delete();
 
             if ($user->forceDelete()) {
                 event(new UserPermanentlyDeleted($user));

@@ -30,6 +30,10 @@ return [
         'none'              => 'None',
         'show'              => 'Show',
         'toggle_navigation' => 'Toggle Navigation',
+        'create_new'        => 'Create New',
+        'toolbar_btn_groups' => 'Toolbar with button groups',
+        'more'              => 'More',
+        'none'              => 'None',
     ],
 
     'backend' => [
@@ -61,6 +65,7 @@ return [
                 'no_permissions'      => 'No Permissions',
                 'no_roles'            => 'No Roles to set.',
                 'permissions'         => 'Permissions',
+                'user_actions'        => 'User Actions',
 
                 'table' => [
                     'confirmed'      => 'Confirmed',
@@ -74,9 +79,10 @@ return [
                     'no_deactivated' => 'No Deactivated Users',
                     'no_deleted'     => 'No Deleted Users',
                     'other_permissions' => 'Other Permissions',
-                    'permissions' => 'Permissions',
+                    'permissions'    => 'Permissions',
+                    'abilities'      => 'Abilities',
                     'roles'          => 'Roles',
-                    'social' => 'Social',
+                    'social'         => 'Social',
                     'total'          => 'user total|users total',
                 ],
 
@@ -93,20 +99,24 @@ return [
                             'created_at'   => 'Created At',
                             'deleted_at'   => 'Deleted At',
                             'email'        => 'E-mail',
+                            'last_login_at' => 'Last Login At',
+                            'last_login_ip' => 'Last Login IP',
                             'last_updated' => 'Last Updated',
                             'name'         => 'Name',
                             'first_name'   => 'First Name',
                             'last_name'    => 'Last Name',
                             'status'       => 'Status',
+                            'timezone'     => 'Timezone',
                         ],
                     ],
                 ],
 
                 'view' => 'View User',
             ],
-        ],
+        ]
 
-        // Do not delete me :) I'm used for auto-generation
+
+            // Do not delete me :) I'm used for auto-generation
 
 
     ],

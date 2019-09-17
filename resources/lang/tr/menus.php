@@ -46,6 +46,7 @@ return [
         'sidebar' => [
             'dashboard' => 'Kokpit',
             'general'   => 'Genel',
+            'history'   => 'History',
             'system'    => 'Sistem',
         ],
     ],
@@ -67,6 +68,7 @@ return [
             'el'    => 'Yunanca (Greek)',
             'en'    => 'İngilizce (English)',
             'es'    => 'İspanyolca (Spanish)',
+            'fa'    => 'Farsça (Persian)',
             'fr'    => 'Fransızca (French)',
             'he'    => 'İbranice (Hebrew)',
             'id'    => 'Endonezya (Indonesian)',
